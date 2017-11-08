@@ -24,7 +24,7 @@ const instructions = Platform.select({
 export default class App extends Component {
   render() {
     var startPoint = { x: 170, y: 50 }
-    var endPoint = { x: 210, y: 410 }
+    var endPoint = { x: 300, y: 410 }
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>

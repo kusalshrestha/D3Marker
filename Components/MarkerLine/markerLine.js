@@ -34,11 +34,11 @@ class MarkerLine extends Component {
     //"M110 210 H90 C80 210, 50 210, 50 180 V20"
     
     startPoint = arrowCenterPoint
-    let controlPoint1 = `${endingPoint.x - dx} ${endingPoint.y}`
-    let controlPoint2 = `${endingPoint.x - dx - 30} ${endingPoint.y}`
-    let controlPoint3 = `${endingPoint.x - dx - 30} ${endingPoint.y - 50}`
+    let controlPoint1 = `${endingPoint.x - 20} ${endingPoint.y}`
+    let controlPoint2 = `${endingPoint.x - dx - endingPoint.y / 7} ${endingPoint.y}`
+    let controlPoint3 = `${endingPoint.x - dx - 25} ${50}`
     
-    this.linePath = `M${startPoint} H${endingPoint.x - dx + 10} C${controlPoint1}, ${controlPoint2} ${controlPoint3} V${startingPoint.y}`
+    this.linePath = `M${startPoint} H${endingPoint.x - 5} C${controlPoint1}, ${controlPoint2} ${controlPoint3} V${50}`
   }
 
   render() {
